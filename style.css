@@ -198,8 +198,16 @@ header nav a:hover {
   padding-top: 12px;
 }
 
+.hero-cartao-preco {
+  font-size: 0.8rem;
+  color: #6e7191 !important;
+  background: white;
+  border-top: 1px solid var(--cor-borda);
+  padding-top: 12px;
+}
+
 .hero-cartao-preco strong {
-  color: var(--cor-texto);
+  color: #14142b !important;
   font-size: 1.15rem;
 }
 
