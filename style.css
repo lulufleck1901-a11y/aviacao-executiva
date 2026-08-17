@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-primaria: #5b5fe9;
+  --cor-primaria-escura: #4a46d6;
+  --cor-texto: #14142b;
+  --cor-texto-claro: #6e7191;
+  --cor-fundo-suave: #f5f6fc;
+  --cor-borda: #e6e6f4;
+
+  --fonte-texto: "Inter", sans-serif;
+  --fonte-titulo: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--cor-primaria);
+  color: white;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 999px; 
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--cor-primaria-escura);
+  transform: translateY(-2px);
+}
+
+.btn-bloco {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(20, 20, 43, 0.06);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logo span {
+  color: var(--cor-primaria);
+}
+
+header nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+header nav a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: var(--cor-primaria);
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 80px 40px;
+  background: linear-gradient(160deg, #1b1668, #2e2a8c);
+  color: white;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d9b975;
+  margin-bottom: 16px;
+}
+
+#hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+#hero p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 28px;
+  max-width: 420px;
+}
+
+.hero-cartao {
+  background: white;
+  color: var(--cor-texto);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  max-width: 320px;
+}
+
+.hero-cartao-imagem {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.hero-cartao-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+  background: #e8e8fd;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.hero-cartao-rota {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.hero-cartao-rota .direita {
+  text-align: right;
+}
+
+.hero-cartao-rota strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.hero-cartao-rota small {
+  color: var(--cor-texto-claro);
+  font-size: 0.75rem;
+}
+
+.hero-cartao-linha {
+  flex: 1;
+  height: 1px;
+  background: var(--cor-borda);
+  margin: 0 12px;
+}
+
+.hero-cartao-info {
+  font-size: 0.8rem;
+  color: var(--cor-texto-claro);
+  margin-bottom: 14px;
+}
+
+.hero-cartao-preco {
+  font-size: 0.8rem;
+  color: var(--cor-texto-claro);
+  border-top: 1px solid var(--cor-borda);
+  padding-top: 12px;
+}
+
+.hero-cartao-preco strong {
+  color: var(--cor-texto);
+  font-size: 1.15rem;
+}
+
+#recursos {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+#recursos h2 {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 4px 14px rgba(20, 20, 43, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(20, 20, 43, 0.1);
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+}
+
+#como-funciona {
+  padding: 80px 40px;
+  background: var(--cor-fundo-suave);
+  text-align: center;
+}
+
+#como-funciona h2 {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.passos {
+  display: flex;
+  gap: 32px;
+  text-align: left;
+}
+
+.passo {
+  flex: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 4px 14px rgba(20, 20, 43, 0.05);
+}
+
+.passo-numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--cor-primaria);
+  color: white;
+  font-weight: 700;
+  font-family: var(--fonte-titulo);
+  margin-bottom: 16px;
+}
+
+.passo h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.passo p {
+  font-size: 0.88rem;
+  color: var(--cor-texto-claro);
+}
+
+#cadastro {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+#cadastro h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.cadastro-sub {
+  color: var(--cor-texto-claro);
+  margin-bottom: 36px;
+}
+
+.form-cadastro {
+  max-width: 400px;
+  margin-inline: auto;
+  background: var(--cor-fundo-suave);
+  padding: 32px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.form-cadastro label {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.form-cadastro label span {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-cadastro input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.form-cadastro input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+}
+
+footer {
+  background: var(--cor-texto);
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  padding: 24px;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  .recursos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 20px;
+  }
+
+  header nav ul {
+    gap: 20px;
+  }
+
+  #hero {
+    grid-template-columns: 1fr;
+    padding: 50px 24px;
+    text-align: center;
+  }
+
+  #hero p {
+    margin-inline: auto;
+  }
+
+  .hero-cartao {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  #recursos, #como-funciona, #cadastro {
+    padding: 56px 24px;
+  }
+
+  .passos {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .recursos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-cadastro {
+    padding: 24px 20px;
+  }
+}

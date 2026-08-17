@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroGo — Aviação executiva sob demanda</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#hero" class="logo">Aero<span>Go</span></a>
+    <nav>
+      <ul>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <div class="hero-texto">
+        <span class="tag">Aviação executiva sob demanda</span>
+        <h1>Seu próximo voo particular, a poucos toques de distância.</h1>
+        <p>Compare aeronaves, escolha o piloto e reserve sua rota em minutos com o AeroGo.</p>
+        <a href="#cadastro" class="btn">Criar conta</a>
+      </div>
+
+      <div class="hero-cartao">
+        <img src="imagem/latam-anuncia-compra-de-ate-74-avioes-da-embraer-9125.avif" alt="Ilustração de um jato executivo branco em voo sobre um céu azul" class="hero-cartao-imagem">
+        <span class="hero-cartao-tag">Voo selecionado</span>
+        <div class="hero-cartao-rota">
+          <div>
+            <strong>POA</strong>
+            <small>Porto Alegre</small>
+          </div>
+          <span class="hero-cartao-linha"></span>
+          <div class="direita">
+            <strong>CGH</strong>
+            <small>São Paulo</small>
+          </div>
+        </div>
+        <p class="hero-cartao-info">15/09 · 08:30 · Phenom 300</p>
+        <p class="hero-cartao-preco">A partir de <strong>R$ 9.200</strong></p>
+      </div>
+    </section>
+
+    <section id="recursos">
+      <h2>Por que escolher o AeroGo</h2>
+
+      <div class="recursos-grid">
+        <article class="card">
+          <h3>Pilotos verificados</h3>
+          <p>Certificações em dia e avaliação real de outros passageiros antes de embarcar.</p>
+        </article>
+
+        <article class="card">
+          <h3>Pagamento flexível</h3>
+          <p>Cartão de crédito, Pix ou transferência bancária, sem burocracia.</p>
+        </article>
+
+        <article class="card">
+          <h3>Frota diversa</h3>
+          <p>De jatos leves a modelos executivos maiores, para toda necessidade de viagem.</p>
+        </article>
+
+        <article class="card">
+          <h3>Reserva instantânea</h3>
+          <p>Código de reserva na hora e acompanhamento completo da viagem.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <h2>Como funciona</h2>
+
+      <div class="passos">
+        <div class="passo">
+          <span class="passo-numero">1</span>
+          <h3>Busque sua rota</h3>
+          <p>Informe origem, destino e data da viagem.</p>
+        </div>
+
+        <div class="passo">
+          <span class="passo-numero">2</span>
+          <h3>Escolha a aeronave</h3>
+          <p>Compare preço, capacidade e o piloto responsável.</p>
+        </div>
+
+        <div class="passo">
+          <span class="passo-numero">3</span>
+          <h3>Confirme e voe</h3>
+          <p>Pague pelo app e receba sua reserva na hora.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cadastro">
+      <h2>Crie sua conta</h2>
+      <p class="cadastro-sub">Leva menos de um minuto.</p>
+
+      <form class="form-cadastro" onsubmit="return false;">
+        <label>
+          <span>Nome completo</span>
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="email" placeholder="seu@email.com" required>
+        </label>
+
+        <label>
+          <span>Senha</span>
+          <input type="password" name="senha" placeholder="Crie uma senha" required>
+        </label>
+
+        <button type="submit" class="btn btn-bloco">Criar conta</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 AeroGo. Projeto acadêmico — Desenvolvimento Web Front-End.</p>
+  </footer>
+
+</body>
+</html>
